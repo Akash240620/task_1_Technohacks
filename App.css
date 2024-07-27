@@ -1,0 +1,124 @@
+/* Base styles */
+.App {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  min-height: 94.14vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.heading {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  margin: 10px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section input{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 92%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
+
+.section select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px;
+  color: #ff7e5f;
+}
+
+.convert-button {
+  background-color: #ff7e5f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.convert-button:hover {
+  background-color: #feb47b;
+}
+
+.result {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .section, .row {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .switch {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 1.5em;
+  }
+
+  .section {
+    min-width: 100%;
+  }
+
+  .result h2 {
+    font-size: 1.2em;
+  }
+
+  .result p {
+    font-size: 1em;
+  }
+}
